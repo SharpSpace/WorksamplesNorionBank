@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Models.Interfaces;
 
-namespace TollFeeCalculator
+namespace Models;
+
+public sealed class Car : IVehicle
 {
-    public class Car : Vehicle
-    {
-        public String GetVehicleType()
-        {
-            return "Car";
-        }
-    }
+    public string GetVehicleType() => nameof(Common.VehicleTypes.Car);
 }
